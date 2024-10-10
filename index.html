@@ -3,19 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>My Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div>logo</div>
-        <div class="nav-item-container">
-            <div class="navbar-item">Menu</div>
-            <div class="navbar-item">Download</div>
-            <div class="navbar-item">Home</div>
-            <div class="navbar-item">Phone</div>
-        </div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
-    
+
+    <div class="container">
+        <section id="home">
+            <h1>Welcome to My Landing Page</h1>
+            <p>This is a simple website created for a project.</p>
+            <button>Learn More</button>
+        </section>
+
+        <section id="about" class="grid-layout">
+            <div>
+                <h2>About Us</h2>
+                <p>We provide various services to help you succeed.</p>
+            </div>
+            <div>
+                <img src="about.jpg" alt="About Us">
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>We offer a range of solutions tailored to your needs.</p>
+            <div class="flex-layout">
+                <div class="service-box">
+                    <h3>Service 1</h3>
+                    <p>Details about Service 1.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Service 2</h3>
+                    <p>Details about Service 2.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Service 3</h3>
+                    <p>Details about Service 3.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Connect with us on social media!</p>
+        <a href="https://www.facebook.com/profile.php?id=100011087346732">Facebook</a> | 
+        <a href="https://www.instagram.com/_tptyy/">Instagram</a>
+    </footer>
 </body>
 </html>
