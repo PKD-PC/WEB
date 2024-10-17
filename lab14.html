@@ -3,19 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>cat</title>
+    <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
-    <div id="parent"></div>
-    <h1 id="username">Username</h1>
-    <div id="profile" style="position: relative; height: 300px; width: 300px; border-radius: 50%; background-color: cadetblue;">        
-        <div style="position: absolute; background-image: url();"></div>
+    <h1>
+        <span class="username" id="username">username</span>
+    </h1>
+    <div class="avatar" id="avatar">
+        <div class="notification">1</div>
     </div>
-    <label for="">Set Username</label>
-    <input type="text" placeholder="Enter" id="input"><button onclick="setimage()">set</button>
+    
+    <div>
+        <input type="text" id="usernameInput" placeholder="Enter Username">
+        <button onclick="setUsername()">SET</button>
+    </div>
+    <div>
+        <input type="text" id="avatarInput" placeholder="Enter Image URL">
+        <button onclick="setAvatar()">SET</button>
+    </div>
+    
+    <div>
+        <input type="text" id="nameInput" placeholder="Name">
+        <input type="tel" id="phoneInput" placeholder="Phone Number">
+        <button onclick="addContact()">ADD</button>
+        <button onclick="exportContacts()">EXPORT</button>
+    </div>
+    
+    <table id="contactTable">
+        <tr>
+            <th>No.</th>
+            <th>Name</th>
+            <th>Phone Number</th>
+        </tr>
+    </table>
 
-    <script>
-
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
